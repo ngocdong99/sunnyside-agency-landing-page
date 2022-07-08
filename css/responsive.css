@@ -1,0 +1,107 @@
+
+@media (max-width:739px) {
+    .top-header {
+        position: relative;
+    }
+    .header-mobile-nav {
+        display: block;
+    }
+    .top-header {
+        position: relative;
+        padding: 20px 20px;
+    }
+    .header-nav {
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--white);
+        margin-top: 60px;
+        width: 90%;
+        align-items: center;
+        animation: showMenu ease 0.5s;
+        transform-origin: top right;
+        display: none;
+       
+        
+    }
+
+    @keyframes showMenu {
+        from{
+            opacity: 0;
+            transform: translate(20px, -10px) ;
+        } to {
+            transform: translateX(0) ;
+            opacity: 1;
+        }
+    }
+.active {
+    display: flex;
+}
+    .header-nav::after{
+        content: '';
+        border-left: 20px solid transparent;   
+        border-top: 20px solid transparent;
+        border-right: 20px solid var(--white);    
+        border-bottom: 20px solid var(--white);
+        position: absolute;
+        top: -35px;
+        right: 0px;
+        box-shadow: 2px 0 2px -2px #888;
+    }
+    .header-mobile-nav {
+        cursor: pointer;
+    }
+    .header-nav a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--very-dark-grayish);
+        padding: 0 20px;
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .header-nav a:last-child {
+        background-color: var(--yellow);
+    }
+    .service-wrapper:first-child {
+        flex-direction: column-reverse;
+    }
+    .service-text,.service-image {
+        width: 100%;
+    }
+    .service-wrapper {
+        flex-direction: column;
+    }
+    .service-wrapper:last-child {
+        flex-wrap: wrap;
+    }
+    .sub-wrapper {
+        text-align: center;
+        width: 100%;
+    }
+    .sub-content {
+        padding: 0 80px;
+    }
+    .sub-image {
+        width: 100%;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+    .person {
+        margin-bottom: 20px;
+    }
+    #projects {
+        flex-wrap: wrap;
+    }
+    .project-image{
+        width: 50%;
+    }
+    .sub-title {
+    margin-bottom: 20px;
+    }
+    .sub-content {
+        bottom: 40px;
+    }
+}
+

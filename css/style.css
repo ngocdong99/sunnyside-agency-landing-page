@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --soft-red:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --dark-desaturated: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate: hsl(168, 34%, 41%);
+    --very-dark-desaturated: hsl(212, 27%, 19%);
+    --very-dark-grayish: hsl(213, 9%, 39%);
+    --dark-grayish: hsl(232, 10%, 55%);
+    --grayish-blue:  hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    width: 100%;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+.top-header {
+    width: 100%;
+    display: flex;
+    padding: 40px 40px;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+}
+
+.top-header-content {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.header-nav a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header-nav a:last-child {
+    color: var(--very-dark-desaturated);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.header-nav {
+    display: flex;
+    line-height: 29px;
+}
+.bottom-header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 24px;
+}
+.icon-down {
+    margin-top: 60px;
+}
+.header-mobile-nav {
+    display: none;
+}
+
+
+/* Service */
+.service-wrapper {
+    display: flex;
+}
+
+.service-text {
+    width: 50%;
+    padding: 140px 100px;
+}
+
+.service-title{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    color: var(--very-dark-desaturated);
+    margin-bottom: 36px;
+}
+ .service-content {
+    font-family: 'Barlow', sans-serif;
+    color: var(--dark-grayish);
+    font-size: 18px;
+    margin-bottom: 36px;
+ }
+ .service-help {
+    position: relative;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated);
+    display: inline-block;
+ }
+ .service-help:after {
+    position: absolute;
+    content: "";
+    left:0;
+    bottom:0;
+    right:0;
+    background: var(--yellow);
+    opacity: 0.7;
+    height: 4px;
+    border-radius: 2px;
+ }
+
+.service-image{
+    width: 50%;
+}
+
+.sub-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.sub-content{
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    padding: 0 180px;
+}
+
+.sub-title {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 36px;
+    
+}
+.sub-1 .sub-title {
+    color: var(--dark-desaturated);
+}
+ .sub-1 .sub-text {
+    color: var(--dark-moderate);
+ }
+
+.sub-text {
+    font-family: 'Barlow', sans-serif;
+}
+
+.sub-2 .sub-title {
+    color: var(--very-dark-desaturated);
+}
+ .sub-2 .sub-text {
+    color: var(--dark-blue);
+ }
+ 
+/*  About*/
+ #about {
+    text-align: center;
+ }
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+.about-title {
+    font-family: 'Fraunces', serif;
+    color: var(--grayish-blue);
+    margin: 60px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.person {
+    padding: 20px 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.introduction {
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-grayish);
+    margin-bottom: 40px;
+}
+.name {
+    font-family: 'Fraunces', serif;
+    color: var(--very-dark-desaturated);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.job {
+    color: var(--grayish-blue);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+/* Projects */
+#projects {
+    display: flex;
+    
+}
+.project-image {
+    width: 25%;
+}
+#contact {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    background-color: #90d4c5;
+}
+
+.contact-title { 
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color:var(--dark-desaturated);
+    padding: 30px 0;
+}
+.contact-sub {
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+.contact-sub span {
+    margin: 10px 20px;
+    color: var(--dark-moderate);
+}
+.contact-icon img {
+    margin: 0 16px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+}
